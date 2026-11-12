@@ -36,22 +36,57 @@
 /* 1. Estilos gerais
 /**********************************/
 
+html{
+	font-size: 62,5%;
+}
+
 body {
 	background-image: url('http://cdn.backgroundhost.com/backgrounds/subtlepatterns/retina_wood.png');
-	background-color: grey;
+	background-color: rgb(236, 237, 255);
+	font-family: var(--ff);
 }
 
 /**********************************/
 /* 2. Placa
 /**********************************/
 
-
+.plaque{
+	background: var(--plaque-background);
+	width: 43rem;
+	height: 55rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+	box-shadow: var(--plaque-shadow);
+	display: flex;
+	justify-content: center;
+}
 
 /**********************************/
 /* 3. Botão
 /**********************************/
 
+.button{
+	background: var(--btn-shadow);
+	width: 19rem;
+	height: 13rem;
+	box-shadow: var(--btn-shadow);
+	border-radius: 2.5rem;
+	opacity: 0.7;
+	position: relative;
+	top: 10rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
+.button__play{
+	width: 0;
+	height: 0;
+	border-top: 3rem solid transparent;
+	border-bottom: 3rem solid transparent;
+	border-left: 5rem solid #adafb3;
+	filter: var(--btn-filter);
+}
 
 /**********************************/
 /* 4. Descrição
